@@ -57,6 +57,10 @@
 
 </head>
 <body>
+    <audio id="myAudio">
+  <source src="m.mp3" type="audio/mp3">
+</audio>
+
     <div class="painel">
         <h1>Feliz dia dos Namorados!</h1>
         <img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-mordidas.gif">
@@ -64,8 +68,7 @@
 
 
     <a href="https://i.makeagif.com/media/11-15-2015/luyI9E.gif"><button id="sim"> xexu! </button></a>
-    <button onmouseover= "fuja()" id="nao"> fof! </button><br><br>
-        <audio src="m.mp3" loop autoplay controls></audio>
+    <button onmouseover= "fuja()" id="nao"> fof! </button>
 </div>
 <script>
 
@@ -84,6 +87,11 @@
         botaoNao.style.left = aleatorioX + "px";
         botaoNao.style.top = aleatorioY + "px";
     }
+</script>
+<script>
+  var audio = document.getElementById("myAudio");
+  audio.loop = true;
+  audio.play();
 </script>
 
 </body>
